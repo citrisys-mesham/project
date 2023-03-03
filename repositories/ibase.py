@@ -1,4 +1,4 @@
-from provider.config.config import Config
+from models.config.config import Config
 
 
 class IBaseRepository(Config):

@@ -1,10 +1,10 @@
 from dataclasses import dataclass
-from .ibase import IBaseRequest
+
 
 @dataclass
 
 
-class AddContactRequest(IBaseRequest):
+class AddContactRequest():
      print("ok")
      door_number:str
      street_name:str
