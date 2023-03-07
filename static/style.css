@@ -1,0 +1,183 @@
+*{
+  margin: 0;
+}
+body{
+ background-color: antiquewhite;
+}
+.header{
+  text-align: center;
+  font: 4em sans-serif;
+  font-weight: 900;
+  color: lightseagreen;
+  padding-top: 100px;
+}
+.property{
+  margin-top: 10px;
+  font-size: 35px;
+  font-family: serif;
+  color: gray;
+  font-weight: 900;
+  padding-left: 550px;
+}
+.select{
+  margin-left: 85px;
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+.pro_desc{
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+.pro_rating{
+  margin-left: 70px;
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+.image{
+  margin-left: 80px;
+  font-size:20px;
+  text-align: center;
+}
+.room{
+  margin-top: 10px;
+  font-size: 35px;
+  font-family: serif;
+  color: gray;
+  font-weight: 900;
+  padding-left: 550px;
+}
+
+.room1{
+  margin-left: 3px;
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+
+.room2{
+  margin-left: 13px;
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+.room3{
+  margin-left: 73px;
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+.remove-room{
+  border-radius: 5px;
+  border: none;
+  padding: 5px 5px;
+  font-size: 20px;
+  color: white;
+  background-color: gray;
+  margin-left: 500px;
+  margin-top: -40px;
+  display: block;
+  cursor: pointer;
+}
+span{
+  margin-left:1200px;
+  margin-top:-30px;
+  display: flex;
+  font-size: 30px;
+  font-weight: 900;
+  color: gray;
+  cursor: pointer;
+}
+
+.contact{
+  margin-left: 550px;
+  margin-top: -30px;
+  font-size: 35px;
+  font-family: serif;
+  color: gray;
+  font-weight: 900;
+}
+button{
+  margin-left: -100px;
+}
+.btn{
+  margin-left: 550px;
+  margin-top: -62px;
+  display: flex;
+}
+.location{
+  padding-left: 550px;
+  margin-top: -30px;
+  font-size: 35px;
+  color: gray;
+  font-weight: 900;
+}
+.ad{
+  margin-left: 53px;
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none; 
+  margin-top: 50px;
+}
+.si{
+  margin-left: 83px;
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none; 
+
+}
+.ci{
+  margin-left: 117px;
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none; 
+
+}
+.pi{
+  margin-left: 123px;
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none; 
+}
+.sa{
+  margin-left: 98px;
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none; 
+}
+.email{
+  margin-top: 10px;
+  font-size: 35px;
+  font-family: serif;
+  color: gray;
+  font-weight: 900;
+  padding-left: 550px;
+}
+.mail{
+  margin-left: 83px;
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+.button{
+  margin-left: 40px;
+}
+.submit{
+  margin-left: 600px;
+  display: flex;
+  
+}
