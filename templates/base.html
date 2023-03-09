@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<a href="{{ url_for('api_blueprint.feature_list_blueprint.get_data') }}"></a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		{% block content %}{% endblock %}
+	</main>
+</body>
+</html>
