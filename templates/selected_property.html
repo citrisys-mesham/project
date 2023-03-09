@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if formatted_property %}
+        <h1>Selected Property:</h1>
+        <pre>{{ formatted_property|safe }}</pre>
+    {% endif %}
+{% endblock %}

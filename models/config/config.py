@@ -1,10 +1,10 @@
-import mysql.connector 
+import mysql.connector
 import configparser
 class Config():
     def __init__(self) -> None:
         self.config=configparser.ConfigParser()
         
-        self.config.read('/home/lenovo/Desktop/myproject/project/models/config/config_file.ini')
+        self.config.read('/opt/flask-project/project/models/config/config_file.ini')
         
         
         self.conn=mysql.connector.connect(

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <form  action="">
+    <div class="contact">
+        <h1>Contact Details</h1>
+        <div class="input">
+            <label for="">Door_no:</label>
+            <input class="door" type="text">
+        </div>
+        <div class="input">
+            <label for="">street_name:</label>
+            <input class="name" type="text">
+        </div>
+        <div class="input">
+            <label for="">city:</label>
+            <input class="city" type="text">
+        </div>
+        <div class="input">
+            <label for="">State:</label>
+            <input class="state" type="text">
+        </div>
+        <div class="input">
+            <label for="">Country:</label>
+            <input class="country" type="text">
+        </div>
+        <div class="input">
+            <label for="">Zip_code:</label>
+            <input class="zip" type="text">
+        </div>
+        <div class="input">
+            <label>Phone :</label>
+             <input class="phone" type="text" placeholder="Enter Phone number" id="number" autocomplete="off">
+             <p id="error" class="error msg">Please enter a valid phone number</p>
+        </div>
+        <div class="input">
+            <label for="email">Email:</label>
+            <input class="email" type="email" id="email" name="email" required>
+        </div>
+    </div>
+   <button class="button" onclick="fun()">Submit</button>
+</form>
+<script>
+  function validatePhoneNumber(e) {
+ var pNumber = document.getElementById('number').value;
+ if (!phoneRegex(pNumber)) {
+  document.getElementById('error').classList.add('msg');
+  alert("submitted");
+ }
+ else {
+  document.getElementById('error').classList.remove('msg');
+ }
+ e.preventDefault();
+}
+function fun(){
+    alert('successful')
+}
+
+</script>
+
+</body>
+</html>

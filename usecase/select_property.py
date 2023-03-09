@@ -1,5 +1,5 @@
-from repositories.property import PropertyRepo
-from dto.request.property import AddPropertyRequest
+from repositories.select_property import PropertyRepo
+from dto.request.select_property import AddPropertyRequest
 class PropertyCase():
     def __init__(self,repo:PropertyRepo) -> None:
         self.repo=repo

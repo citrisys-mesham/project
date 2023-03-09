@@ -3,7 +3,7 @@ from dataclasses import dataclass
 @dataclass
 
 class Property():
-    contact_id:int
+    # contact_id:int
     pro_name:str
-    pro_description:str
-    rating:float
+    # pro_description:str
+    # rating:float
