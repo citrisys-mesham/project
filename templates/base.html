@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+	<header>
+		
+		<nav>
+			<ul>
+				
+				<a href="{{ url_for('api_blueprint.feature_list_blueprint.all') }}"></a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		
+		{% block content %}{% endblock %}
+	</main>
+	<script src="{{ url_for('static', filename='js/form.js') }}"></script>
+</body>
+</html>

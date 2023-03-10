@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form  action="{{ url_for('api_blueprint.contact_blueprint.insert_contact') }}" method="POST">
+    <div class="contact">
+        <h1>Contact Details</h1>
+        <div class="input">
+            <label >Door_no:</label>
+            <input class="door" type="text" id="door" name="door">
+        </div>
+        <div class="input">
+            <label >street_name:</label>
+            <input class="name" type="text" id="street_name" name="street_name">
+        </div>
+        <div class="input">
+            <label >city:</label>
+            <input class="city" type="text" id="city" name="city">
+        </div>
+        <div class="input">
+            <label >State:</label>
+            <input class="state" type="text" id="state" name="state">
+        </div>
+        <div class="input">
+            <label >Country:</label>
+            <input class="country" type="text" id="country" name="country">
+        </div>
+        <div class="input">
+            <label >Zip_code:</label>
+            <input class="zip" type="text" id="zip" name="zip">
+        </div>
+        <div class="input">
+            <label>Phone :</label>
+             <input class="phone" type="text" placeholder="Enter Phone number" id="number" name="number" autocomplete="off">
+            </div>
+        <div class="input">
+            <label for="email">Email:</label>
+            <input class="email" type="email" id="email" name="email" >
+        </div>
+    </div>
+   <button class="button" onclick="fun()">Submit</button>
+</form>
+{% endblock %}
+
