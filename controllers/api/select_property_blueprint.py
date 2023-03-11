@@ -1,4 +1,4 @@
-from flask import Blueprint,request,jsonify,render_template
+from flask import Blueprint,request,jsonify,render_template,redirect,url_for
 import json
 from dto.request.select_property import AddPropertyRequest
 from repositories.select_property import PropertyRepo
@@ -19,7 +19,8 @@ def insert_property():
     property_list = property_list.rstrip() 
     print("property_list",property_list)
     
-    return render_template('selected_property.html',formatted_property=property_list)
+    return redirect(url_for('api_blueprint.feature_list_blueprint.all'))
+    # return render_template('selected_property.html',formatted_property=property_list)
 # def get_data():
 #     data=json.loads(request.get_data())
 #     req=AddPropertyRequest(**data)

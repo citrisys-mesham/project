@@ -5,7 +5,7 @@ from repositories.contact import ContactRepo
 from usecase.contact import ContactUseCase
 
 contact_blueprint=Blueprint('contact_blueprint',__name__)
-
+property_list_blueprint=Blueprint('property_list_blueprint',__name__)
 @contact_blueprint.route('/',methods=["POST"])
 
 def insert_contact():
@@ -29,7 +29,7 @@ def insert_contact():
     print("con_use",use)
     output=use.handle(contact_req) 
     print("output",output)
-    return redirect(url_for('api_blueprint.property_list_blueprint.get_data'))
+    return redirect(url_for('api_blueprint.property_list_blueprint.all'))
         
 
      
