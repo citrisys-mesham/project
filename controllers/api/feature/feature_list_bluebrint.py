@@ -1,6 +1,6 @@
 from flask import Flask,request,Blueprint,render_template
-from repositories.feature_list import FeatureListRepo
-from usecase.feature_list import FeatureListCase
+from repositories.feature.feature_list import FeatureListRepo
+from usecase.feature.feature_list import FeatureListCase
 feature_list_blueprint=Blueprint('feature_list_blueprint',__name__)
 
 @feature_list_blueprint.route('/all')
