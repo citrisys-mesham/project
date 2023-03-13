@@ -1,4 +1,4 @@
-from repositories.property_list import PropertyListRepo
+from repositories.property.property_list import PropertyListRepo
 
 class PropertyListCase():
     def __init__(self,repo=PropertyListRepo) -> None:
@@ -6,5 +6,6 @@ class PropertyListCase():
 
     def get(self):
         result=self.repo.get_property()
+        
         return result    
         

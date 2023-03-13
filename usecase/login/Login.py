@@ -1,6 +1,6 @@
 from flask import Blueprint, request, render_template, session, redirect, url_for
-from repositories.login import LoginRepo
-from dto.request.login import LoginRequest
+from repositories.login.login import LoginRepo
+from dto.request.login.login import LoginRequest
 
 class LoginUsecase:
 

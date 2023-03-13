@@ -1,6 +1,6 @@
 from flask import Flask,request,Blueprint,render_template,redirect,url_for
-from repositories.property_list import PropertyListRepo
-from usecase.property_list import PropertyListCase
+from repositories.property.property_list import PropertyListRepo
+from usecase.property.property_list import PropertyListCase
 
 property_list_blueprint=Blueprint('property_list_blueprint',__name__)
 

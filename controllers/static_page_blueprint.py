@@ -6,6 +6,9 @@ static_blueprint = Blueprint('static_blueprint', __name__)
 def index():
     return render_template("login.html")
 
+@static_blueprint.route("/singup")
+def sigup():
+    return render_template("singup.html")
 
 # @static_blueprint.route('/login')
 # def room():
