@@ -5,7 +5,7 @@ from .feature_list_bluebrint import feature_list_blueprint
 from .select_feature_blueprint import select_feature_blueprint
 from .property_list_blueprint import property_list_blueprint
 from.login_blueprint  import login_blueprint
-
+from.room_blueprint import room_blueprint
 api_blueprint=Blueprint('api_blueprint',__name__)
 
 api_blueprint.register_blueprint(
@@ -26,4 +26,7 @@ api_blueprint.register_blueprint(
 )
 api_blueprint.register_blueprint(
     login_blueprint,url_prefix='/login'
+)
+api_blueprint.register_blueprint(
+    room_blueprint,url_prefix='/room'
 )
