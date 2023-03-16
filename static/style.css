@@ -97,87 +97,55 @@ span{
   cursor: pointer;
 }
 
-.contact{
-  margin-left: 550px;
-  margin-top: -30px;
-  font-size: 35px;
-  font-family: serif;
-  color: gray;
-  font-weight: 900;
-}
-button{
-  margin-left: -100px;
-}
-.btn{
-  margin-left: 550px;
-  margin-top: -62px;
+/* CSS for desktop screens */
+form {
   display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #eaf4fc;
+  background: linear-gradient(to right, #ff6a00, #ee0979, #9d04ff, #00c2ba, #00ffa3);
+  background-size: 1000% 1000%;
+  animation: rainbow-background 10s ease infinite;
 }
-.location{
-  padding-left: 550px;
-  margin-top: -30px;
-  font-size: 35px;
-  color: gray;
-  font-weight: 900;
+@keyframes rainbow-background {
+  0% {background-position: 0% 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%}
 }
-.ad{
-  margin-left: 53px;
-  font-size:20px;
-  text-align: center;
-  border-radius: 10px;
-  border: none; 
-  margin-top: 50px;
-}
-.si{
-  margin-left: 83px;
-  font-size:20px;
-  text-align: center;
-  border-radius: 10px;
-  border: none; 
 
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
 }
-.ci{
-  margin-left: 117px;
-  font-size:20px;
-  text-align: center;
-  border-radius: 10px;
-  border: none; 
 
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
-.pi{
-  margin-left: 123px;
-  font-size:20px;
-  text-align: center;
-  border-radius: 10px;
-  border: none; 
-}
-.sa{
-  margin-left: 98px;
-  font-size:20px;
-  text-align: center;
-  border-radius: 10px;
-  border: none; 
-}
-.email{
-  margin-top: 10px;
-  font-size: 35px;
-  font-family: serif;
-  color: gray;
-  font-weight: 900;
-  padding-left: 550px;
-}
-.mail{
-  margin-left: 83px;
-  font-size:20px;
-  text-align: center;
-  border-radius: 10px;
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 12px 24px;
   border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
-.button{
-  margin-left: 40px;
+
+button:hover {
+  background-color: #1e56ce;
 }
-.submit{
-  margin-left: 600px;
-  display: flex;
-  
+body {
+  background-color: #c3c78985; /* change this to your desired background color */
+}
+h1 {
+   text-align: center;
+   font-weight: 700;
+   font-size: 70px;
+   font-family: 'Times New Roman', Times, serif;
+   color: #1411c2ee;
 }

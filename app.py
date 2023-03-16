@@ -1,5 +1,5 @@
 
-from flask import Flask
+from flask import Flask, jsonify
 
 from controllers import api_blueprint,static_blueprint
 # from flask_cors import CORS

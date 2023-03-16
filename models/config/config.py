@@ -4,7 +4,7 @@ class Config():
     def __init__(self) -> None:
         self.config=configparser.ConfigParser()
         
-        self.config.read('/home/whirldata/Documents/new/projectnew/project/models/config/config_file.ini')
+        self.config.read('/opt/flask-project/project/project/models/config/config_file.ini')
         
         
         self.conn=mysql.connector.connect(
