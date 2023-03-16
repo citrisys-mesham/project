@@ -1,4 +1,4 @@
-from repositories.feature_list import FeatureListRepo
+from repositories.feature.feature_list import FeatureListRepo
 
 class FeatureListCase():
     def __init__(self,repo=FeatureListRepo) -> None:

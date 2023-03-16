@@ -1,5 +1,5 @@
 from dto.request.select_feature import FeatureReq
-from .ibase import IBaseRepository
+from repositories.ibase import IBaseRepository
 from entities.select_feature import Feature
 
 class SelectFeatureRepo(IBaseRepository):
