@@ -106,7 +106,7 @@ span{
   font-weight: 900;
 }
 button{
-  margin-left: -100px;
+  /* margin-left: -100px; */
 }
 .btn{
   margin-left: 550px;
@@ -192,4 +192,5 @@ button{
 
 .thumbnail{
   height: 192px;
+  
 }

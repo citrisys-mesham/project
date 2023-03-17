@@ -1,7 +1,7 @@
 from flask import Blueprint, request, session, redirect, url_for, render_template
 from repositories.login.login import LoginRepo
 from usecase.login.Login import LoginUsecase
-from dto.request.login.login import LoginRequest
+from dto.request.login.login import LoginRequest 
 
 
 login_blueprint=Blueprint('login_blueprint',__name__)
@@ -29,5 +29,5 @@ def login_get():
     else:
        return render_template('contact.html')
         
-        # return redirect(url_for('api_blueprint.feature_list_blueprint.all'))
+        
 
