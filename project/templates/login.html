@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center mb-4">Login Form</h1>
+                <form action="{{ url_for('api_blueprint.login_blueprint.login_get') }}" method="POST">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter Password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block mt-4">Login</button>
+                    <div class="mt-4">
+                       
+                        <a href="/singup">Sign up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
