@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+}
+body{
+ background-color: antiquewhite;
+}
+.header{
+  text-align: center;
+  font: 4em sans-serif;
+  font-weight: 900;
+  color: lightseagreen;
+  padding-top: 100px;
+}
+.property{
+  margin-top: 10px;
+  font-size: 35px;
+  font-family: serif;
+  color: gray;
+  font-weight: 900;
+  padding-left: 550px;
+}
+.select{
+  margin-left: 85px;
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+.pro_desc{
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+.pro_rating{
+  margin-left: 70px;
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+.image{
+  margin-left: 80px;
+  font-size:20px;
+  text-align: center;
+}
+.room{
+  margin-top: 10px;
+  font-size: 35px;
+  font-family: serif;
+  color: gray;
+  font-weight: 900;
+  padding-left: 550px;
+}
+
+.room1{
+  margin-left: 3px;
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+
+.room2{
+  margin-left: 13px;
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+.room3{
+  margin-left: 73px;
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+.remove-room{
+  border-radius: 5px;
+  border: none;
+  padding: 5px 5px;
+  font-size: 20px;
+  color: white;
+  background-color: gray;
+  margin-left: 500px;
+  margin-top: -40px;
+  display: block;
+  cursor: pointer;
+}
+span{
+  margin-left:1200px;
+  margin-top:-30px;
+  display: flex;
+  font-size: 30px;
+  font-weight: 900;
+  color: gray;
+  cursor: pointer;
+}
+
+/* CSS for desktop screens */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #eaf4fc;
+  background: linear-gradient(to right, #ff6a00, #ee0979, #9d04ff, #00c2ba, #00ffa3);
+  background-size: 1000% 1000%;
+  animation: rainbow-background 10s ease infinite;
+}
+@keyframes rainbow-background {
+  0% {background-position: 0% 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%}
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #1e56ce;
+}
+body {
+  background-color: #c3c78985; /* change this to your desired background color */
+}
+h1 {
+   text-align: center;
+   font-weight: 700;
+   font-size: 70px;
+   font-family: 'Times New Roman', Times, serif;
+   color: #1411c2ee;
+}

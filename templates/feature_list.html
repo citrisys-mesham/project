@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "base.html" %}
 
 {% block content %}
@@ -15,3 +16,22 @@
         <button type="submit">Save</button>
     </form>
 {% endblock %}
+=======
+    {% extends "base.html" %}
+
+    {% block content %}
+        <h1>Feature List:</h1>
+        <form action="{{ url_for('api_blueprint.select_feature_blueprint.insert_feature') }}" method="POST">
+            <input type="hidden" name="num_features" value="{{ features|length }}">
+            <ul>
+                {% for feature in features %}
+                    <li>
+                        <input type="checkbox" name="features[]" value="{{ feature[1] }}">
+                        {{ feature[1] }}
+                    </li>
+                {% endfor %}
+            </ul>
+            <button type="submit">Save</button>
+        </form>
+    {% endblock %}
+>>>>>>> a5a9baba330bd160ce76a9bd7b6c7e014274535f

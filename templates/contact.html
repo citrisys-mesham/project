@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,3 +68,41 @@ function fun(){
 
 </body>
 </html>
+=======
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+    <h1>Contact Form</h1>
+    <form action="{{ url_for('api_blueprint.contact_blueprint.insert_contact') }}" method="POST">
+      <label for="door">Door Number:</label>
+      <input type="text" id="door" name="door" required>
+  
+      <label for="street_name">Street Name:</label>
+      <input type="text" id="street_name" name="street_name" required>
+  
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required>
+  
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" required>
+  
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country" required>
+  
+      <label for="zip">Zip Code:</label>
+      <input type="text" id="zip" name="zip" required>
+  
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  
+
+{% endblock %}
+>>>>>>> a5a9baba330bd160ce76a9bd7b6c7e014274535f

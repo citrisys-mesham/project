@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}" text="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+
+</head>
+<body>
+<div >
+	<div class="container" >
+    <div class="header">Property</div>
+    <div class="property">Name:
+        <input class="select" id="pro_name" name="pro_name" type="text" placeholder="pro_name">
+    </div>
+    <div class="property">Description:
+        <input class="pro_desc" id="pro_desc" type="text" placeholder="pro_desc"name="pro_desc" >
+    </div>
+    <div class="property">
+      <label for="image">Image:</label>
+      <input class="image" type="file" id="myFileInput" name="Image">
+      <button onclick="uploadFile()">Upload</button>
+    </div>
+    
+		<div class="room">
+		  <label  for="room1-type">Room Type:</label>
+		  <input class="room1" type="text" id="room1-type" name="room-type[]">
+	  <br/>
+		  <label class="demo" for="room1-beds">Bed Count:</label>
+		  <input class="room2" type="number" id="room1-beds" name="room-beds[]">
+	  <br/> 
+		  <label for="room1-rating">Rating:</label>
+		  <input class="room3" type="number" id="room1-rating" name="room-rating[]">
+	  <br/>
+  
+		  <button class="remove-room" type="button">Remove Room</button>
+		</div>
+	  </div>
+	  
+	  <div id="add-room"><span>+</span></div>
+
+   <div class="location">
+    <div >Address:
+      <input class="ad" type="text" placeholder="Address" id="Ad" name="Address">
+    </div>
+    <div >Street:
+      <input class="si" type="text" placeholder="Street" id="st">
+    </div>
+    <div >city:
+      <input class="ci" type="text" placeholder="city" id="city">
+    </div>
+    <div >Pin:
+      <input class="pi" type="text" placeholder="Pin-code" id="pin">
+    </div>
+    <div >State:
+      <input class="sa" type="text" placeholder="State" id="state">
+    </div>
+   </div>
+    
+   <div class="email">
+    <form>
+      <label for="email">Email:</label>
+      <input class="mail" type="email" id="email" name="email" required>
+      <button class="button" type="button" id="submit-btn">Submit</button>
+    </form>
+    
+   </div>
+   <div class="contact">
+    <form id="myform">
+      <br />
+      <label for="phone">PhoneNum:</label>
+      <input class="select" type="tel" id="phoneNo" name="phone" />
+      <br />
+      <br />
+      <button class="btn" type="submit">Submit</button>
+      <br />
+      <br />
+      <div id="result"></div>
+    </form>
+   </div>
+   
+    <button class="btn" id="submitBtn" type="submit">Submit</button>
+   
+</div>
+
+	  <script src="{{ url_for('static', filename='js/form.js')}}"></script>
+</body>
+</html>

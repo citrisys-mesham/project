@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     background-color: #ADD8E6;
@@ -87,3 +88,43 @@
     padding: 0px 20px;
     border-radius: 10px;
 }
+=======
+/* CSS for mobile screens */
+@media only screen and (max-width: 600px) {
+    .input {
+      margin-bottom: 5px;
+    }
+    
+    .label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    
+    .button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      border: none;
+      background-color: #4CAF50;
+      color: #fff;
+    }
+  }
+  
+>>>>>>> a5a9baba330bd160ce76a9bd7b6c7e014274535f

@@ -11,5 +11,5 @@ class Conduct:
     zip_code:str
     phone_number:str
     email:str
-    
+    conact_id:int=None
     

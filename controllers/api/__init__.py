@@ -4,6 +4,12 @@ from .select_property_blueprint import select_property_blueprint
 from .feature_list_bluebrint import feature_list_blueprint
 from .select_feature_blueprint import select_feature_blueprint
 from .property_list_blueprint import property_list_blueprint
+<<<<<<< HEAD
+=======
+from .login_blueprint  import login_blueprint
+from .forgot_password_blueprint import  forgot_password_blueprint
+
+>>>>>>> a5a9baba330bd160ce76a9bd7b6c7e014274535f
 api_blueprint=Blueprint('api_blueprint',__name__)
 
 api_blueprint.register_blueprint(
@@ -21,4 +27,13 @@ api_blueprint.register_blueprint(
 
 api_blueprint.register_blueprint(
     property_list_blueprint,url_prefix='/property_list'
+<<<<<<< HEAD
+=======
+)
+api_blueprint.register_blueprint(
+    login_blueprint,url_prefix='/login'
+)
+api_blueprint.register_blueprint(
+    forgot_password_blueprint,url_prefix='/forgot'
+>>>>>>> a5a9baba330bd160ce76a9bd7b6c7e014274535f
 )
