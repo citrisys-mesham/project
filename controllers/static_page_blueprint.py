@@ -10,6 +10,10 @@ def index():
 def sigup():
     return render_template("singup.html")
 
+@static_blueprint.route("/forgot")
+def forgot():
+    return render_template("forgot.html")
+
 # @static_blueprint.route('/login')
 # def room():
 #     return render_template("login/login.html")
