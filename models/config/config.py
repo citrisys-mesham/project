@@ -5,10 +5,14 @@ class Config():
         self.config=configparser.ConfigParser()
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         self.config.read('/opt/flask-project/project/models/config/config_file.ini')
 =======
         self.config.read('/opt/flask-project/project/project/models/config/config_file.ini')
 >>>>>>> a5a9baba330bd160ce76a9bd7b6c7e014274535f
+=======
+        self.config.read('/home/lenovo/Desktop/myproject/project/models/config/config_file.ini')
+>>>>>>> ee950852b220ae1fdddfdfbd49ba95ecd4612bb2
         
         
         self.conn=mysql.connector.connect(

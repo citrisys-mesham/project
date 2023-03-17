@@ -5,7 +5,7 @@ from dataclasses import dataclass
 
 
 class AddContactRequest():
-     print("ok")
+    
      door_number:str
      street_name:str
      city:str
