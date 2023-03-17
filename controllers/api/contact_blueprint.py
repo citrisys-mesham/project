@@ -15,7 +15,7 @@ def insert_contact():
     State =request.form["state"]
     Country =request.form["country"]
     zip =request.form["zip"]
-    phone=request.form["number"]
+    phone=request.form["phone"]
     email =request.form["email"]
    
     # data=json.loads(data1)

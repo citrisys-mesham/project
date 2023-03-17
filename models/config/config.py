@@ -4,7 +4,7 @@ class Config():
     def __init__(self) -> None:
         self.config=configparser.ConfigParser()
         
-        self.config.read('/home/lenovo/Desktop/myproject/project/models/config/config_file.ini')
+        self.config.read('/opt/clean-code/project/models/config/config_file.ini')
         
         
         self.conn=mysql.connector.connect(
