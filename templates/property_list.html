@@ -7,7 +7,7 @@
         <ul>
             {% for pro in property %}
                 <li>
-                    <input type="checkbox" name="property[]" value="{{ pro[1] }}">
+                    <input type="radio" name="property" value="{{ pro[1] }}">
                     {{ pro[1] }}
                 </li>
             {% endfor %}
@@ -15,3 +15,4 @@
         <button type="submit">Save</button>
     </form>
 {% endblock %}
+
