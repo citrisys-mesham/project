@@ -22,6 +22,7 @@ def forgot_password():
     res = update.handle(req)
     print("res",type(res),res)
     if len(res)==0:
+        print("lenres",res)
         return render_template("forgot.html")
     else:
         return render_template("login.html")
