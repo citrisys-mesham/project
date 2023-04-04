@@ -5,11 +5,11 @@ from repositories.ibase import IBaseRepository
 
 class ContactRepo(IBaseRepository):
     def insert(self,request:AddContactRequest):
-        print("insert")
-        sql="""
-        insert into contact(door_number,street_name,city,state,country,zip_code,phone_number,email)
-        values(%s,%s,%s,%s,%s,%s,%s,%s)
-        """
+        # print("insert")
+        # sql="""
+        # insert into contact(door_number,street_name,city,state,country,zip_code,phone_number,email)
+        # values(%s,%s,%s,%s,%s,%s,%s,%s)
+        # """
 
         contact_val=Conduct(
             door_number=request.door_number,
@@ -34,9 +34,10 @@ class ContactRepo(IBaseRepository):
         )
 
         
-        print(contact_val,type(contact_val))
-        self.cursor.execute(sql,val)
-        print('r5')
-        self.conn.commit()
+        # print(contact_val,type(contact_val))
+        # self.cursor.execute(sql,val)
+        
+        # print('r5')
+        # self.conn.commit()
        
         return contact_val

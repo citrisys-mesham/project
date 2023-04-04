@@ -1,8 +1,7 @@
-from models.config.config import Config
+from modules.config import Config
 
 
 class IBaseRepository(Config):
     def __init__(self) -> None:
         super().__init__()
         self.cursor=self.conn.cursor()
-        

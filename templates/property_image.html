@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="{{ url_for('api_blueprint.property_image_blueprint.proImage') }}" method="POST" enctype="multipart/form-data">
+   <label for="file">Select images</label>
+   <input type="file" id="files" name="files">
+   <output id="result">
+   <button type="submit">save</button> <br/>
+</form>
+{% endblock %}

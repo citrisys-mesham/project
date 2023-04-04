@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form  action="{{ url_for('api_blueprint.room_blueprint.insert_room') }}" method="POST">
+    <div class="contact">
+        <h1>ROOM Details</h1>
+        <div class="input">
+            <label >room type:</label>
+            <input type="text" name="room_type">
+        </div>
+        <div class="input">
+            <label >bed count:</label>
+            <input type="text" name="bed_count">
+        </div>
+        <div class="input">
+            <label >room capacity:</label>
+            <input type="text" name="room_capacity">
+        </div>
+        <div class="input">
+            <label >bathroom:</label>
+            <input type="text" name="bathroom">
+        </div>
+       
+   <button class="button" >Submit</button>
+</form>
+{% endblock %}
+

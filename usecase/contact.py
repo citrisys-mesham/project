@@ -8,9 +8,7 @@ class ContactUseCase():
 
 
     def handle(self,request:AddContactRequest)->Conduct:
-        print("handel up")
+        print("handle up")
         result=self.repo.insert(request)
-        print("hendel",type(result))
+        print("handle",type(result))
         return result    
-
-        

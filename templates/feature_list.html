@@ -1,17 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Feature List:</h1>
-<form action="{{ url_for('api_blueprint.select_feature_blueprint.insert_feature') }}" method="POST">
-
-<div class="feature-list">
-{% for feature in features %}
-<div class="feature-box label">
-<input type="checkbox" id="feature-{{ feature[0] }}" name="features[]" value="{{ feature[1] }}">
-<label for="feature-{{ feature[0] }}">{{ feature[1] }}</label>
-</div>
-{% endfor %}
-</div>
-<button type="submit">Save</button>
-</form>
+    <h1>Feature List:</h1>
+    <form action="{{ url_for('api_blueprint.review_blueprint.getfeature') }}" method="POST">
+        <input type="hidden" name="num_features" value="{{ features|length }}">
+        <ul>
+            {% for feature in features %}
+                <li>
+                    <input type="checkbox" id="features" name="features" value="{{ feature[1] }}">
+                    {{ feature[1] }}
+                </li>
+            {% endfor %}
+        </ul>
+        <button type="submit">Save</button>
+    </form>
 {% endblock %}

@@ -1,6 +1,6 @@
 from flask import Flask, request, Blueprint, render_template, redirect, url_for
 from repositories.login.forgot_password import ForgotRepository
-from dto.request.login.forgot import UpdateForgotRequest
+from dto.request.login.forgot_password import UpdateForgotRequest
 
 class ForgotPasswordUsecase:
     def __init__(self, repo: ForgotRepository):

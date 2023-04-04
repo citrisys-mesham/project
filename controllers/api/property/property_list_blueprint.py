@@ -1,8 +1,9 @@
-from flask import Flask,request,Blueprint,render_template,redirect,url_for
+from flask import Flask,request,Blueprint,render_template,redirect,url_for,jsonify,session
 from repositories.property.property_list import PropertyListRepo
 from usecase.property.property_list import PropertyListCase
 
 property_list_blueprint=Blueprint('property_list_blueprint',__name__)
+
 
 @property_list_blueprint.route('/all')
 
@@ -12,4 +13,7 @@ def all():
     out=case.get()
 
     # return redirect(url_for('api_blueprint.feature_list_blueprint.all'))
+
+    print(type(out),out)
     return render_template("property_list.html",property=out)
+

@@ -1,7 +1,7 @@
 from flask import Blueprint,request,render_template,jsonify
 
 import json,os
-from dto.request.login.forgot import UpdateForgotRequest
+from dto.request.login.forgot_password import UpdateForgotRequest
 # from dto.request.login.forgot import UpdateForgotRequest
 from repositories.login.forgot_password import ForgotRepository
 from usecase.login.forgot_password import ForgotPasswordUsecase
@@ -22,7 +22,6 @@ def forgot_password():
     res = update.handle(req)
     print("res",type(res),res)
     if len(res)==0:
-        print("lenres",res)
         return render_template("forgot.html")
     else:
         return render_template("login.html")

@@ -1,8 +1,26 @@
-from dto.request.login.forgot import UpdateForgotRequest
-from entities.login.forgot import Forgot
+from dto.request.login.forgot_password import UpdateForgotRequest
+from entities.login.forgot_password import Forgot
 from repositories.ibase import IBaseRepository
 
 
+
+    #  def get_data(self,username=str,password=str):
+    
+    #     sql="select username,password from login"
+    #     self.cursor.execute(sql)
+    #     self.result=self.cursor.fetchall()
+    #     self.conn.commit()  
+
+    #     print("loginusername",type(username),username,password)
+    #     self.new = []
+    #     for data in self.result:
+    #         if data[0] == username:
+    #               print("username",username)
+    #               print("datacheck",data)
+    #               return data[0]
+    #         print("dfhjkhgfh",data[0])
+    #         return self.new    
+     
 class ForgotRepository(IBaseRepository):
     def get_data(self,request:UpdateForgotRequest):
         sql = "select username, password from login"
