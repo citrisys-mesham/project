@@ -1,6 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
+<<<<<<< HEAD
+    <h1>property List:</h1>
+    <form action="{{ url_for('api_blueprint.review_blueprint.getproperty') }}" method="POST">
+        <input type="hidden" name="num_features" value="{{ property|length }}">
+        <ul>
+            {% for pro in property %}
+                <li>
+                    <input type="radio" id="property" name="property" value="{{ pro[1] }}">
+                    {{ pro[1] }}
+                </li>
+            {% endfor %}
+        </ul>
+        <button type="submit">Save</button>
+    </form>
+=======
 
 <h1 class="property-head">Property List:</h1>
 <form class="my-form-container" action="{{ url_for('api_blueprint.review_blueprint.getproperty') }}" method="POST">
@@ -20,4 +35,5 @@
 
 
 
+>>>>>>> e74a7cc49627aec5e044768639d6bfab7a27a4ba
 {% endblock %}

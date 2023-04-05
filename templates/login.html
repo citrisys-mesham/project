@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <centre> <h1>  Login Form </h1> </centre> 
+{% include "navebar.html"%}
+    <centre> <h1 class="">  Login Form </h1> </centre> 
     <form action="{{ url_for('api_blueprint.login_blueprint.login_get') }}" method="POST">
-        <div class="container"> 
-            <label>Username : </label> 
+        <div class="container1"> 
+            <label >Username : </label> 
             <input type="text" placeholder="Enter Username" name="username" required><br/>
             <label>Password : </label> 
             <input  type="password" placeholder="Enter Password" name="password" required><br/>
@@ -12,9 +13,9 @@
                 <button type="submit">Login</button>
             </div>
             <br/>
-            <a class="signup" href="/signup">singup</a>
-            <a class="forgot" href="/forgot">forgot password</a>
+            <button style="margin-left: -130px;"><a class="signup" href="/signup">singup</a></button>
+           <button style="margin-top: -26px; margin-left: 70px;"><a class="forgot" href="/forgot">forgot password</a></button> 
         </div> 
     </form>  
-    
+    {% include "fooder.html"%} 
 {% endblock %}

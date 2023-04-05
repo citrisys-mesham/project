@@ -17,3 +17,22 @@ class RoomRepo(IBaseRepository):
         # self.cursor.execute(sql,val1)
         # self.conn.commit()
         return val
+
+
+    def save_room(self,roomdeatails):
+        print("save room",type(roomdeatails) )
+        print("save room",roomdeatails )
+
+        sql="""
+        insert into room (room_type,bed_count,room_capacity,bathroom)
+        values(%s,%s,%s,%s)"""
+
+        val=(roomdeatails["room_type"],
+             roomdeatails["bed_count"],
+             roomdeatails["room_capacity"],
+             roomdeatails["bathroom"]   
+        )
+        self.cursor.execute(sql, val)
+        self.conn.commit()
+
+        print( "room inserted.")

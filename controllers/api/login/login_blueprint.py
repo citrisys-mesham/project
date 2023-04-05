@@ -12,15 +12,15 @@ def login_get():
     input=request.form["username"]
     input1=request.form["password"]
     # input1=input.to_dict(flat=False)
-    print("logininput",input1,input)
+    # print("logininput",input1,input)
     req=LoginRequest(input,input1)
-    print("loginreq",req)
+    # print("loginreq",req)
     repo=LoginRepo()
-    print("loginrepo",repo)
+    # print("loginrepo",repo)
     get_login=LoginUsecase(repo)
-    print("loginget",get_login)
+    # print("loginget",get_login)
     case=get_login.handle(req)
-    print("logincase",case,type(case))
+    # print("logincase",case,type(case))
 
     if len(case)==0:
         print("checking")

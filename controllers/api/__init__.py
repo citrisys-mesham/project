@@ -12,7 +12,7 @@ from .property.property_image_blueprint import property_image_blueprint
 from .login.login_blueprint import login_blueprint
 from .login.signup_blueprint import signup_blueprint
 from .login.forgot_password_blueprint import forgot_password_blueprint
-
+from .save_blueprint import save_blueprint
 
 api_blueprint=Blueprint('api_blueprint',__name__)
 
@@ -31,6 +31,7 @@ api_blueprint.register_blueprint(
 
 api_blueprint.register_blueprint(
     room_blueprint,url_prefix='/room'
+
 )
 api_blueprint.register_blueprint(
     property_image_blueprint,url_prefix='/proimage'
@@ -44,5 +45,9 @@ api_blueprint.register_blueprint(
 )
 api_blueprint.register_blueprint(
     forgot_password_blueprint,url_prefix='/forgot'
+)
+
+api_blueprint.register_blueprint(
+    save_blueprint,url_prefix='/save'
 )
 
