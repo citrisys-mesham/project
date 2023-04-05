@@ -1,64 +1,304 @@
-.container {
+.navbar
+{
+    background-color: #e4effb;
+    
+  
+}
+.container-fluid 
+{
+    display: flex;
+    align-items: center;
+   
+}
+
+.navbar-brand img
+{
+    width:150px;
+    height: 150px;
+    padding: 25px;
+    margin-left: 100px;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+.fa-lg
+{
+    font-size: 2rem;
+    margin-left: 65rem;background-color: #fffafa;
+    color: #0a0a0a;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.fa-lg:hover {
+  background-color: #fff;
+  color: #765656;
+}
+.dropdown-item
+{
+    color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    margin-left: 65rem;
+}
+
+.hero {
+  
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.hero h1 {
+  color: #6c5353;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #864f4f;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+/* Signup start*/
+
+.signup-form1
+{
+  background-color:  #d2c4c4;
+  border-radius: 5px;
+  max-width: 700px;
+}
+
+.signup-form1 {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #c4b7c7;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #748492;
+}
+
+.signup-form1 h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #738082;
+  border-radius: 5px;
+  
+}
+.form-control:focus{
+  outline: none;
+  border-color: rgb(135, 156, 154);
+  border-width: 3px;
+}
+
+.btn-primary {
+  background-color: #06c;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: medium;
+  font-family: "Open Sans", sans-serif;
+  padding: 15px;
+  margin-left: 100px;
+  width: 50%;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #adbfd3;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 10px;
+
+}
+.sign-head
+{
+  color: #563c74;
+}
+
+/*signup end*/
+
+/*welcome start*/
+.welcome-container
+{
+  text-align: center;
+  color: #563c74;
+  font-size: medium;
+  margin-bottom: 50px;
+}
+
+.welcome-content
+{
+  color: rgb(241, 136, 176);
+  font-size: 20px;
+  margin-bottom: 20px;
+
+}
+
+.btn-primary-welcome
+{
+  margin-right: 10px;
+  background-color: #06c;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: medium;
+  font-family: "Open Sans", sans-serif;
+  padding: 15px;
+  width: 50%;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+/*welcome end*/
+
+/*Property list start*/
+
+.property-head
+{
+  text-align: center;
+  color: #563c74;
+  font-size: 40px;
+  margin-bottom: 50px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.my-form-container
+{
+  
+  background-color: #c4b7c7;
+  box-shadow: 0px 0px 10px #748492;
+	padding: 20px;
+	border-radius: 10px;	
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.props-ul
+{
+  list-style: none;
+	padding: 0;
+	margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  color: rgb(45, 44, 44);
+  font-weight: bolder;
+}
+
+.props-li
+{
+ 
+  margin-bottom: 10px;
+  background-color: white;
+  
+  
+}
+
+.props-input {
+  margin-right: 10px;
+  color: white;
+  
+}
+.container-props label{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin: 20px;
+  justify-content: center;
+  width: 200px;
+  height: 150px;
   padding: 20px;
+  border: 1px solid #100f0f;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-in-out;
+  background-color: whitesmoke;
 }
 
-input, label {
-  margin: 10px;
-  padding: 10px;
+.container-props input[type="radio"]:checked + label:hover {
+  background-color: #80bdcf;
+ 
+}
+.container-props input[type="radio"]:checked + label {
+  color: white;
+  background-color:#80bdcf;
+  transition: none; /* remove the transition */
+}
+.container-props:active {
+  background-color: #80bdcf;
 }
 
-button {
-  margin: 20px;
-  padding: 10px;
+.container-props input[type="radio"] {
+  display: none;
 }
 
-
-form {
-
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: #eaf4fc;
-  background: linear-gradient(to right, #ff6a00, #ee0979, #9d04ff, #00c2ba, #00ffa3);
-  background-size: 1000% 1000%;
-  animation: rainbow-background 10s ease infinite;
-}
-@keyframes rainbow-background {
-  0% {background-position: 0% 50%}
-  50% {background-position: 100% 50%}
-  100% {background-position: 0% 50%}
-} 
-
-label {
-  font-weight: bold;
-  margin-bottom: 8px;
+.props-button {
+  margin-top: 20px;
+  margin-left: 45%;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #06c;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: medium;
+  font-family: "Open Sans", sans-serif;
+  align-items: center;
+ 
 }
 
+.props-button:hover {
+  background-color: #9cafc5;
+  cursor: pointer;
+  transition: 0.3s;
+  color: black;
+}
 
-button:hover {
-  background-color: #1e56ce;
+/*Property list end*/
+
+/*Feature list Start*/
+
+.feature-head
+{
+  text-align: center;
+  color: #563c74;
+  font-size: 40px;
+  margin-bottom: 50px;
+  font-family: "Open Sans", sans-serif;
 }
-body {
-  background-color: #c3c78985; /* change this to your desired background color */
-}
-h1 {
-   text-align: center;
-   font-weight: 700;
-   font-size: 70px;
-   font-family: 'Times New Roman', Times, serif;
-   color: #1411c2ee;
-}
-a{
-  font-size: 20px;
-  text-align: left;
-  padding-left: -20%;
-}
+
 .feature-list {
   display: flex;
   flex-wrap: wrap;
@@ -76,6 +316,8 @@ a{
   border: 1px solid #ccc;
   border-radius: 10px;
   transition: background-color 0.2s ease-in-out;
+  background-color: whitesmoke;
+  margin-left:90px ;
 }
 
 .feature-box label:hover {
@@ -89,4 +331,19 @@ a{
 .feature-box input[type="checkbox"]:checked + label {
   color: white;
   background-color: #b0c7df;
+}
+/*Feature list end*/
+
+.text-danger
+{
+  color: red;
+}
+.signup-form1
+{
+  width: 30%;
+  margin-left: 35%;
+}
+.sign-head
+{
+  text-align: center;
 }

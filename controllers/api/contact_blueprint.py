@@ -9,6 +9,11 @@ property_list_blueprint=Blueprint('property_list_blueprint',__name__)
 @contact_blueprint.route('/',methods=["POST"])
 
 def insert_contact():
+    
+    username = request.cookies.get('username')
+    if not username:
+        return redirect(url_for('login_blueprint.login_get'))
+
     Door_no =request.form["door"]
     Street =request.form["street_name"]
     city =request.form["city"]

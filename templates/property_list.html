@@ -1,18 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>property List:</h1>
-    <form action="{{ url_for('api_blueprint.select_property_blueprint.insert_property') }}" method="POST">
-        <input type="hidden" name="num_features" value="{{ property|length }}">
-        <ul>
-            {% for pro in property %}
-                <li>
-                    <input type="radio" name="property" value="{{ pro[1] }}">
-                    {{ pro[1] }}
-                </li>
-            {% endfor %}
-        </ul>
-        <button type="submit">Save</button>
-    </form>
+
+<h1 class="property-head">Property List:</h1>
+<form class="my-form-container" action="{{ url_for('api_blueprint.select_property_blueprint.insert_property') }}" method="POST">
+    <input type="hidden" name="num_features" value="{{ property|length }}">
+    <ul class="props-ul">
+        {% for pro in property %}
+        <li class="props-li">
+            <div class="container-props">
+                <input class="props-input" type="radio" name="property" value="{{ pro[1] }}" id="{{ pro[1] }}" >
+                <label for="{{ pro[1] }}">{{ pro[1] }}</label>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    <button class="props-button" type="submit">Next</button>
+</form>
+
+
+
 {% endblock %}
 

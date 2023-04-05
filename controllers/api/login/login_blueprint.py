@@ -1,4 +1,4 @@
-from flask import Blueprint, request, session, redirect, url_for, render_template
+from flask import Blueprint, request, session, redirect, url_for, render_template,make_response
 from repositories.login.login import LoginRepo
 from usecase.login.Login import LoginUsecase
 from dto.request.login.login import LoginRequest 
@@ -27,7 +27,9 @@ def login_get():
         return render_template('login.html')
         
     else:
-       return render_template('contact.html')
+       response = make_response(render_template('contact.html'))
+       response.set_cookie('username', input)
+       return response
         
         
 
