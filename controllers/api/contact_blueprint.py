@@ -6,7 +6,7 @@ from usecase.contact import ContactUseCase
 
 contact_blueprint=Blueprint('contact_blueprint',__name__)
 
-@contact_blueprint.route('/',methods=["POST"])
+@contact_blueprint.route('/contact',methods=["POST"])
 
 def insert_contact():
     

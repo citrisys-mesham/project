@@ -1,20 +1,4 @@
-{% extends "base.html" %}
 
-{% block content %}
-    <centre> <h1>  signup Form </h1> </centre> 
-    <form action="{{ url_for('api_blueprint.signup_blueprint.signup_get') }}" method="POST">
-        <div class="container"> 
-            <label>Username : </label> 
-            <input type="text" placeholder="Enter Username" name="username" required><br/>
-            <label>Password : </label> 
-            <input  type="password" placeholder="Enter Password" name="password" required><br/>
-            <button type="submit">singup</button> <br/>
-            <!-- Forgot  <a class="A" href="#"> password? </a> <br/> -->
-            <!-- <a href="#"> signup </a> -->
-        </div> 
-    </form>  
-    
-{% endblock %}
 {% extends "base.html" %}
 
 {% block content %}
@@ -57,7 +41,7 @@
                 <span id="compare-password-error" class="text-danger" style="display:none;" >
                   Password do not match 
                  </span>
-                
+
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-block">Signup</button>
@@ -67,6 +51,6 @@
             Already have an account? <a href="{{ url_for('static_blueprint.login') }}">Login</a>
         </div>
     </div>
-    
+
     <script src="{{ url_for('static', filename='/js/form.js') }}"></script>
 {% endblock %}

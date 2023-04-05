@@ -1,15 +1,9 @@
 from flask import Blueprint,request,render_template,redirect,session,url_for
 
-<<<<<<< HEAD
-# contact_blueprint=Blueprint('contact_blueprint',__name__)
-review_blueprint=Blueprint('review_blueprint',__name__)
-
-=======
 
 review_blueprint=Blueprint('review_blueprint',__name__)
 
 
->>>>>>> e74a7cc49627aec5e044768639d6bfab7a27a4ba
 @review_blueprint.route('/getcontact')
 def getcontact():
     print("getcontact")

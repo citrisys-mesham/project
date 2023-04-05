@@ -10,9 +10,9 @@ def index():
 def login():
     return render_template("login.html")
 
-@static_blueprint.route("/singup")
+@static_blueprint.route("/signup")
 def signup():
-    return render_template("singup.html")
+    return render_template("signup.html")
 
 @static_blueprint.route("/forgot")
 def forgot():

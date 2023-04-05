@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-{% include "navebar.html"%}
     <centre> <h1 class="">  Login Form </h1> </centre> 
     <form action="{{ url_for('api_blueprint.login_blueprint.login_get') }}" method="POST">
         <div class="container1"> 
@@ -17,5 +16,5 @@
            <button style="margin-top: -26px; margin-left: 70px;"><a class="forgot" href="/forgot">forgot password</a></button> 
         </div> 
     </form>  
-    {% include "fooder.html"%} 
+    
 {% endblock %}

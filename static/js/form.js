@@ -1,3 +1,4 @@
+/*
 function validatePhoneNumber(e) {
   var pNumber = document.getElementById('number').value;
   if (!phoneRegex(pNumber)) {
@@ -38,8 +39,8 @@ document.querySelector('#files').addEventListener('change', (e) =>{
 })
 
 
-
-  
+*/
+document.addEventListener("DOMContentLoaded", function(event) {
 document.getElementById("signup-form").addEventListener("submit", function(event) {
     var username = document.getElementsByName("username")[0].value;
     var email = document.getElementsByName("email")[0].value;
@@ -95,4 +96,4 @@ document.getElementById("signup-form").addEventListener("submit", function(event
         event.preventDefault();
     }
 });
-   
+});  
