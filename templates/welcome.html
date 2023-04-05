@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="welcome-container">
+
+    <h1 class="welcome-head">Welcome {{ username }}!</h1>
+    <p class="welcome-content">Thank you for signing up. To get started, please create your property profile.</p>
+    <a href="{{ url_for('api_blueprint.property_list_blueprint.all') }}" class="btn btn-primary-welcome">Create Property Profile</a>
+</div>
+
+    {% endblock %}

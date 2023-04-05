@@ -1,9 +1,7 @@
 from flask import Blueprint,request,render_template,redirect,session,url_for
 
-# contact_blueprint=Blueprint('contact_blueprint',__name__)
+
 review_blueprint=Blueprint('review_blueprint',__name__)
-
-
 
 
 @review_blueprint.route('/getcontact')
@@ -12,8 +10,6 @@ def getcontact():
 
     output = session.get('output')
     print ("getcontact",output)
-    # return redirect('/api/review/showproperty')
-    # return render_template('room.html')
     return redirect('/api/property_list/all')
 
 @review_blueprint.route('/getproperty', methods=['POST'])

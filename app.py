@@ -1,12 +1,9 @@
 
 from flask import Flask
-
 from controllers import api_blueprint,static_blueprint
-# from flask_cors import CORS
+
 app=Flask(__name__)
 app.secret_key = 'mysecretkey'
-
-# CORS(app)
 
 app.register_blueprint(
     static_blueprint,
