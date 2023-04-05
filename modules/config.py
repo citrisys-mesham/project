@@ -4,7 +4,7 @@ class Config():
     def __init__(self) :
         self.config=configparser.ConfigParser()
         
-        self.config.read('/home/whirldata/Documents/project2/modules/config.ini')
+        self.config.read('/home/lenovo/Desktop/cookies/project/modules/config.ini')
         
         
         self.conn=mysql.connector.connect(

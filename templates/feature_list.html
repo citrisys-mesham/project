@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+<<<<<<< HEAD
     <h1>Feature List:</h1>
     <form action="{{ url_for('api_blueprint.review_blueprint.getfeature') }}" method="POST">
         <input type="hidden" name="num_features" value="{{ features|length }}">
@@ -15,3 +16,19 @@
         <button type="submit">Save</button>
     </form>
  
+=======
+<h1>Feature List:</h1>
+<form action="{{ url_for('api_blueprint.review_blueprint.getfeature') }}" method="POST">
+
+<div class="feature-list">
+{% for feature in features %}
+<div class="feature-box label">
+<input type="checkbox" id="feature-{{ feature[0] }}" name="features[]" value="{{ feature[1] }}">
+<label for="feature-{{ feature[0] }}">{{ feature[1] }}</label>
+</div>
+{% endfor %}
+</div>
+<button type="submit">Save</button>
+</form>
+{% endblock %}
+>>>>>>> e74a7cc49627aec5e044768639d6bfab7a27a4ba

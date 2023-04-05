@@ -5,7 +5,7 @@ from usecase.login.signup import SignupUsecase
 
 signup_blueprint=Blueprint('signup_blueprint',__name__)
 
-@signup_blueprint.route("/",methods=["POST"])
+@signup_blueprint.route("/signup",methods=["POST"])
 def signup_get():
     username =request.form["username"]
     password =request.form["password"]
@@ -13,4 +13,7 @@ def signup_get():
     repo=SignupRepo()
     get_login=SignupUsecase(repo)
     out=get_login.handle(req)
-    return render_template("login.html")
+    if out:
+      return render_template("welcome.html",username=username)
+    else:
+        return render_template("login.html", error="Signup failed. Please try again.")    

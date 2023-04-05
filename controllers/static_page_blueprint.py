@@ -4,13 +4,18 @@ static_blueprint = Blueprint('static_blueprint', __name__)
 
 @static_blueprint.route('/')
 def index():
+    return render_template("/home.html")
+
+@static_blueprint.route('/login')
+def login():
     return render_template("login.html")
 
-@static_blueprint.route("/signup")
+@static_blueprint.route("/singup")
 def signup():
-    return render_template("signup.html")
+    return render_template("singup.html")
 
 @static_blueprint.route("/forgot")
 def forgot():
     return render_template("forgot_password.html")
+
 
