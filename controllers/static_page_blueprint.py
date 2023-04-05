@@ -19,6 +19,3 @@ def forgot():
     return render_template("forgot_password.html")
 
 
-# @static_blueprint.route('/login')
-# def room():
-#     return render_template("login/login.html")
