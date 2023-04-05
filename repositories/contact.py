@@ -41,3 +41,35 @@ class ContactRepo(IBaseRepository):
         # self.conn.commit()
        
         return contact_val
+
+
+    def save_contact(self,contact):
+         print("save contact", type(contact))
+         print("save contact", contact)
+
+        
+         sql="""
+        insert into contact(door_number,street_name,city,state,country,zip_code,phone_number,email)
+        values(%s,%s,%s,%s,%s,%s,%s,%s)
+        """
+    
+
+         val = (
+            contact['door_number'],
+            contact['street_name'],
+            contact['city'],
+            contact['state'],
+            contact['country'],
+            contact['zip_code'],
+            contact['phone_number'],
+            contact['email']
+        )
+         self.cursor.execute(sql, val)
+         self.conn.commit()
+
+         print( "record inserted.")
+
+
+
+
+

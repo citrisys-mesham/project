@@ -3,9 +3,6 @@ from flask import Blueprint,request,render_template,redirect,session,url_for
 # contact_blueprint=Blueprint('contact_blueprint',__name__)
 review_blueprint=Blueprint('review_blueprint',__name__)
 
-
-
-
 @review_blueprint.route('/getcontact')
 def getcontact():
     print("getcontact")

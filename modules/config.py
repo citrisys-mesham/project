@@ -1,7 +1,7 @@
 import mysql.connector
 import configparser
 class Config():
-    def __init__(self) -> None:
+    def __init__(self) :
         self.config=configparser.ConfigParser()
         
         self.config.read('/home/whirldata/Documents/project2/modules/config.ini')
