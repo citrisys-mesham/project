@@ -1,12 +1,52 @@
 /*Contact Strat*/
-.contact-head
+/* Add styles to the form container */
+.contact-form
 {
-  text-align: center;
-  color: #563c74;
-  font-size: 40px;
-  font-family: "Open Sans", sans-serif;
+   margin-left: 400px;
+    background-color:  #d2c4c4;
+    border-radius: 5px;
+    max-width: 700px;
+    max-height: 700px;
 
 }
+
+.contact-head {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+  
+.control-lable {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+button[type="submit"] {
+  background-color: #06c;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
 /*Contact end*/
   
 
