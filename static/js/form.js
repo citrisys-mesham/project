@@ -16,7 +16,7 @@ function validatePhoneNumber(e) {
 
 //  image page
 
-/*document.querySelector('#files').addEventListener('change', (e) =>{
+document.querySelector('#files').addEventListener('change', (e) =>{
   if(window.File && window.FileReader && window.FileList && window.Blob){
       const files = e.target.files;
       const output = document.querySelector('#result');
@@ -35,7 +35,7 @@ function validatePhoneNumber(e) {
   }else{
       alert('browser does not support')
   }
-})*/
+})
 
 
 

@@ -15,7 +15,7 @@ def getcontact():
 @review_blueprint.route('/getproperty', methods=['POST'])
 
 def getproperty():
-    name = request.form['property']
+    name = request.form.get('property')
     session['property'] = name
     print ("get property",name)
     return redirect('/api/feature_list/all')
@@ -24,10 +24,9 @@ def getproperty():
 @review_blueprint.route('/getfeature', methods=['POST'])
 
 def getfeature():
-    fea =request.form.getlist('features')
+    fea =request.form.getlist('features[]')
     session['features'] = fea
     print ("get features",fea)
-    # return redirect('/api/review/showproperty')
     return render_template('room.html')
 
 

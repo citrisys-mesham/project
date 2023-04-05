@@ -1,7 +1,7 @@
 from flask import Blueprint,request,render_template
-from dto.request.login.singup import SingupRequest
-from .repositories.login.singup import SingupRepo
-from .usecase.login.singup import SingupUsecase
+from dto.request.login.signup import SignupRequest
+from repositories.login.signup import SignupRepo
+from usecase.login.signup import SignupUsecase
 
 signup_blueprint=Blueprint('signup_blueprint',__name__)
 
@@ -9,9 +9,9 @@ signup_blueprint=Blueprint('signup_blueprint',__name__)
 def signup_get():
     username =request.form["username"]
     password =request.form["password"]
-    req=SingupRequest(username,password)
-    repo=SingupRepo()
-    get_login=SingupUsecase(repo)
+    req=SignupRequest(username,password)
+    repo=SignupRepo()
+    get_login=SignupUsecase(repo)
     out=get_login.handle(req)
     if out:
       return render_template("welcome.html",username=username)

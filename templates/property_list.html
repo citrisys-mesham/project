@@ -3,7 +3,7 @@
 {% block content %}
 
 <h1 class="property-head">Property List:</h1>
-<form class="my-form-container" action="{{ url_for('api_blueprint.select_property_blueprint.insert_property') }}" method="POST">
+<form class="my-form-container" action="{{ url_for('api_blueprint.review_blueprint.getproperty') }}" method="POST">
     <input type="hidden" name="num_features" value="{{ property|length }}">
     <ul class="props-ul">
         {% for pro in property %}
