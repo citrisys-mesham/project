@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <centre> <h1 class="">  Login Form </h1> </centre> 
+    <centre> <h1 class="login-head">  Login Form </h1> </centre> 
     <form action="{{ url_for('api_blueprint.login_blueprint.login_get') }}" method="POST">
-        <div class="container1"> 
+        <div class="container2"> 
             <label >Username : </label> 
             <input type="text" placeholder="Enter Username" name="username" required><br/>
             <label>Password : </label> 

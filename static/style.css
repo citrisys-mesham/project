@@ -1,3 +1,21 @@
+.container2 {
+  display: flex;
+  width: 300px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 5px 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 500px;
+  padding: 20px;
+}
+
+.login-head {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #563c74;
+}
 /*Contact Strat*/
 /* Add styles to the form container */
 .contact-form
@@ -381,7 +399,7 @@ body {
   border-radius: 10px;
   transition: background-color 0.2s ease-in-out;
   background-color: whitesmoke;
-  margin-left:90px ;
+  margin-left:15% ;
 }
 
 .feature-box label:hover {
@@ -398,4 +416,19 @@ body {
 }
 /*Feature list end*/
 
-
+.btn-primary-login
+{
+  margin-right: 10px;
+  background-color: #06c;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: medium;
+  font-family: "Open Sans", sans-serif;
+  padding: 15px;
+  width: 10%;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
