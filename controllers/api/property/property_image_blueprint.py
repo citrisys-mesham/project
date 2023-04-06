@@ -10,7 +10,7 @@ property_image_blueprint=Blueprint('property_image_blueprint',__name__)
 
 def proImage():
     print("image")
-    current_app.config['UPLOAD_FOLDER'] ="/home/whirldata/Documents/final/project/static/image/property"
+    current_app.config['UPLOAD_FOLDER'] =r"C:\Users\muniyasamy\Desktop\samy\project\static\image\property"
     picture_url=request.files['files']
     print(picture_url)
     filename = secure_filename(picture_url.filename)

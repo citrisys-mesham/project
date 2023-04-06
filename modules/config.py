@@ -4,7 +4,7 @@ class Config():
     def __init__(self) :
         self.config=configparser.ConfigParser()
         
-        self.config.read('/home/whirldata/Documents/final/project/modules/config.ini')
+        self.config.read(r'C:\Users\muniyasamy\Desktop\samy\project\modules\config.ini')
         
         
         self.conn=mysql.connector.connect(

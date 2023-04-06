@@ -1,4 +1,4 @@
-from flask import Blueprint,session
+from flask import Blueprint,session,render_template
 from repositories.property.property_list import PropertyListRepo
 from repositories.feature.feature_list import FeatureListRepo
 from repositories.contact import ContactRepo
@@ -30,4 +30,4 @@ def save():
     imgrepo= imageRepo()
     imgrepo.save_image(image)
     
-    return "all data saved"
+    return render_template("thankyou.html")
